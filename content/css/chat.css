@@ -1,0 +1,79 @@
+body {
+    background: none repeat scroll 0 0 #fafafa;
+    font-family: arial;
+}
+#content {
+    margin: 50px auto;
+    position: relative;
+    text-align: left;
+    width: 1000px;
+}
+
+#slideshow
+{
+    width:480px;
+    float: left;
+    height:470px;
+}
+
+#chat
+{
+    width:480px;
+    float: right;
+    height:470px;
+}
+
+.visualClear
+{
+    clear:both;
+}
+
+.chatInterface
+{
+    width: 100%;
+}
+
+#chatwindow {
+    background: none repeat scroll 0 0 #FFFFFF;
+    background-image: url(../bg.jpg);
+    border: 1px solid #AAAAAA;
+    color: #666666;
+    font-family: courier new;
+    height: 411px;
+    padding: 4px;
+    font-size:14px;
+    margin:0px 0px 26px 0px;
+}
+#info {
+    font-family: arial;
+    padding-left: 0;
+    text-align: left;
+}
+#info td {
+    color: #DFDFDF;
+    font-size: 12px;
+    padding-right: 10px;
+}
+#info .small {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+#info a {
+    color: white;
+    text-decoration: none;
+}
+#chatmsg {
+    width: 320px;
+}
+#chatbutton {
+    width: 71px;
+    margin: 0;
+}
+#info a:hover {
+    color: #CF9700;
+    text-decoration: underline;
+}
+#chatnick {
+    width: 75px;
+}

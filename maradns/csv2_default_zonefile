@@ -1,0 +1,3 @@
+*.	SOA	intk.com. email@intk.com. 1 7200 3600 604800 1800
+*.	NS	ns.intk.com.
+*.	A	192.168.1.1

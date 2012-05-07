@@ -1,8 +1,0 @@
-This application requires MacOS X and a Wifi radio capable of running in 
-ad-hoc mode. This means any MacBook or iMac  will be able to run it.
-
-To run the application from the source just do:
-
-python unCloud.py
-
-To package the application into a .app install py2app ( http://pypi.python.org/pypi/py2app/ )

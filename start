@@ -6,8 +6,8 @@ sudo ifconfig wlan0 192.168.1.1 netmask 255.255.255.0
 echo "starting AP"
 sudo hostapd -dd hostapd/hostapd.conf &
 
-echo "Preparing content"
-sudo ./content.py
+#echo "Preparing content"
+#sudo ./content.py
 
 sudo dnsmasq -C dnsmasq/dnsmasq.conf -p 54
 sudo maradns -f maradns/mararc &

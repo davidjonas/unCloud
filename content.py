@@ -13,14 +13,14 @@ import socket
 
 pathname = os.path.dirname(sys.argv[0])
 path = os.path.abspath(pathname)
-contentPath = "/var/www/unCloudServer"
+contentPath = "/var/www"
 
 #Check if content path already exists and has the right version
 if not os.path.exists(contentPath):
         print "Copying content"
-        os.mkdir(contentPath)
+        #os.mkdir(contentPath)
         #Copy content to /Library/WebServer/Documents/unCloudServer
-        call(["cp -r %s/content/ %s"%(path, contentPath)], shell=True)
+        call(["cp -r %s/content %s"%(path, contentPath)], shell=True)
         time.sleep(2)
         call(["chmod -R 777 %s"%contentPath], shell=True)
 else:

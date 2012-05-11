@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#install dependencies
+apt-get maradns dnsmasq hostapd apache2 php5
+
+#Disable dnsmasq by default
+sed -i 's/ENABLED=1/ENABLED=0/' /etc/default/dnsmaq
+
+#Checkout from github
+cd /var
+git clone https://github.com/davidjonas/unCloud/ unCloud
+cd unCloud
+git checkout unCloudLinux
+
+#copy the content to apache home
+cp -r content/* /var/www

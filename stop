@@ -1,0 +1,6 @@
+#!/bin/sh
+
+pkill -9 maradns
+pkill -9 dnsmasq
+pkill -9 hostapd
+

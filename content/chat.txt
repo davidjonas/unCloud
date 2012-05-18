@@ -2,3 +2,9 @@ unCloud&nbsp;&nbsp;&nbsp;| You have created an open WiFi network. <br />
 unCloud&nbsp;&nbsp;&nbsp;| Chat here with anyone connected to it.<br />
 unCloud&nbsp;&nbsp;&nbsp;| Uncloud works best in crowded places.<br />
 
+unCloud&nbsp;&nbsp;&nbsp;| Someone just joined this local cloud.<br />
+unCloud&nbsp;&nbsp;&nbsp;| Someone just joined this local cloud.<br />
+unCloud&nbsp;&nbsp;&nbsp;| Someone just joined this local cloud.<br />
+iPad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Hello!!!<br />
+Computer&nbsp;&nbsp;| hello!!<br />
+iPhone&nbsp;&nbsp;&nbsp;&nbsp;| Hello<br />

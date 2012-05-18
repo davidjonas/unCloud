@@ -2,24 +2,26 @@ body {
     background: none repeat scroll 0 0 #fafafa;
     font-family: arial;
 }
+
 #content {
     margin: 50px auto;
     position: relative;
     text-align: left;
-    width: 1000px;
+    width: 490px;
 }
 
-#slideshow
-{
-    width:480px;
+#slideshow {
     float: left;
-    height:470px;
+    height: 470px;
+    margin-bottom: 50px;
+    margin-right: 35px;
+    width: 480px;
 }
 
 #chat
 {
     width:480px;
-    float: right;
+    float:left;
     height:470px;
 }
 
@@ -37,7 +39,7 @@ body {
     background: none repeat scroll 0 0 #FFFFFF;
     background-image: url(../bg.jpg);
     border: 1px solid #AAAAAA;
-    color: #666666;
+    color: #000;
     font-family: courier new;
     height: 411px;
     padding: 4px;
@@ -76,4 +78,14 @@ body {
 }
 #chatnick {
     width: 75px;
+}
+
+@media screen and (min-width:1110px) {
+    #content {
+        margin: 50px auto;
+        position: relative;
+        text-align: left;
+        max-width: 1000px;
+        width: 90%;
+    }
 }

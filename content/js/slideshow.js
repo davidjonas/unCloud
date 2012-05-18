@@ -254,12 +254,28 @@ mediaShow.loadSlide = function (slideshow, slideNumber)
         
         slideContainer.find('.mediaShowMedia a').append(mediaShow.getMediaObject(data.media, slideshow));
         
+        if (data.media.type == "Video")
+        {
+            //slideContainer.find('.mediaShowMedia a video').each(function (){$(this).VideoJS();})
+            _V_(data.media.url, {}, function(){
+                // Player (this) is initialized and ready.
+            });
+        }
+        
         if(slideshow.presentation)
         {
           slideContainer.find('.mediaShowDescription').css({'top': '50%', 'margin-top': -(slideContainer.find('.mediaShowDescription').height()/2)});
         }
         
         slide.loaded = mediaShow.LOADED;
+        
+        $(slideContainer).touchwipe({
+            wipeLeft: function() {mediaShow.next(mediaShow.indexOf(slideshow)) },
+            wipeRight: function() { mediaShow.next(mediaShow.indexOf(slideshow)) },
+            preventDefaultEvents: false
+    });
+
+        
         mediaShow.loadNext(slideshow);
     });
 }
@@ -315,10 +331,9 @@ mediaShow.getMediaObject = function(media, slideshow)
 
 mediaShow.getVideoTag = function (media)
 {
-  var video = '<object width="100%" height="100%" type="application/x-shockwave-flash" data="http://dev.intk.com:9080/intk/++resource++collective.flowplayer/flowplayer.swf" id="fp_82834502_api"><param value="true" name="allowfullscreen"><param value="always" name="allowscriptaccess"><param value="high" name="quality"><param value="false" name="cachebusting"><param value="#000000" name="bgcolor"><param value="config={&quot;clip&quot;:{&quot;scaling&quot;:&quot;fit&quot;,&quot;autoBuffering&quot;:false,&quot;autoPlay&quot;:false,&quot;url&quot;:&quot;'+media.url+'?e=.mp4&quot;},&quot;plugins&quot;:{&quot;audio&quot;:{&quot;url&quot;:&quot;http%3A//dev.intk.com%3A9080/intk/%2B%2Bresource%2B%2Bcollective.flowplayer/flowplayer.audio.swf&quot;},&quot;controls&quot;:{&quot;url&quot;:&quot;http%3A//dev.intk.com%3A9080/intk/%2B%2Bresource%2B%2Bcollective.flowplayer/flowplayer.controls.swf&quot;,&quot;volume&quot;:true}},&quot;playerId&quot;:&quot;fp_82834502&quot;,&quot;playlist&quot;:[{&quot;scaling&quot;:&quot;fit&quot;,&quot;autoBuffering&quot;:false,&quot;autoPlay&quot;:false,&quot;url&quot;:&quot;'+media.url+'?e=.mp4&quot;}]}" name="flashvars"></object>';
+  var video = '<video id="' + media.url + '" class="video-js vjs-default-skin" controls preload="auto" width="480" height="270"> <source src="' + media.url + '" type="video/mp4" /></video>';
   return video;
 }
-
 
 mediaShow.getYoutubeEmbed = function (media)
 {

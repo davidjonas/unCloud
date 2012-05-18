@@ -14,3 +14,7 @@ git checkout unCloudLinux
 
 #copy the content to apache home
 cp -r content/* /var/www
+
+#add uncloud to run automatically on boot
+ln -s ~/Desktop/unCloud /etc/init.d/unCloud
+update-rc.d unCloud defaults

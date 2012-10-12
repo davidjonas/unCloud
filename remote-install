@@ -1,0 +1,18 @@
+#install dependencies
+apt-get install git maradns dnsmasq hostapd apache2 php5 openssh-server openssh-client
+
+#Disable dnsmasq by default
+sed -i 's/ENABLED=1/ENABLED=0/' /etc/default/dnsmasq
+
+#Checkout from github
+cd /var
+git clone https://github.com/davidjonas/unCloud/ unCloud
+cd unCloud
+git checkout unCloudLinux
+
+#copy the content to apache home
+cp -r content/* /var/www
+
+#add uncloud to run automatically on boot
+#ln -s ~/Desktop/unCloud /etc/init.d/unCloud
+#update-rc.d unCloud defaults

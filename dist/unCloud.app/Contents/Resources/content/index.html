@@ -1,0 +1,41 @@
+<html>
+	<head>
+	<title>unCloud</title>
+	<META http-equiv="Pragma" content="no-cache">
+	<link href="css/chat.css" rel="stylesheet" type="text/css">
+	<link href="css/mediaShow.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/chat.js" type="text/javascript"></script>
+	<script src="js/slideshow.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="info">
+		<br>
+					
+		</div>
+		
+		
+		<div id="content">
+
+			<div id="slideshow">
+				<div class="embededMediaShow" >
+				     <a href="load.php"></a>
+				</div>
+			</div>
+
+			<div id="chat">
+				<p id="chatwindow"> </p>		
+				<div class="visualClear"> </div>
+				<div class="chatInterface">
+					<input id="chatnick" type="text" maxlength="9" />&nbsp;
+					<input id="chatmsg" type="text" maxlength="80"  onkeyup="keyup(event.keyCode);" /> 
+					<input id="chatbutton" type="button" value="Send" onclick="submit_msg();" /><br /><br />
+				</div>
+				<br />
+			</div>
+			
+		</div>
+
+	</body>
+</html>
+

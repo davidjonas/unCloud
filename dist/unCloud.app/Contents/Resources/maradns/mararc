@@ -1,0 +1,5 @@
+hide_disclaimer = "YES"
+csv2 = {}
+csv2["."] = "csv2_default_zonefile"
+ipv4_bind_addresses = "192.168.1.1"
+chroot_dir = "/Users/davidjonasdesign/Documents/Scripts/unCloud/dist/unCloud.app/Contents/Resources/maradns"

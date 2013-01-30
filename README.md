@@ -5,6 +5,7 @@ The internet has become an increasingly disputed space. Governments want to regu
 
 Installation instructions
 =========================
+Before installing unCloud make sure to backup your apache folder contents /var/www/ if you have something there. The website served by uncloud will be stored in this directory.
 
 To install unCloud on linux you can use the automatic remote installation script by simply pasting the following command on a terminal window.
 
@@ -31,6 +32,7 @@ cd ~/unCloud
 
 sudo ./start
 
+When unCloud starts, it generates a wireless network called "unCloud".
 
 When you are done using unCloud you can stop it by running:
 

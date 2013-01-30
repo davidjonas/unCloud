@@ -19,7 +19,9 @@ Running unCloud
 
 To run unCloud, type the following commands in a terminal:
 
+
 cd ~/unCloud
+
 sudo ./start
 
 

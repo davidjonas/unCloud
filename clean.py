@@ -11,7 +11,7 @@ call(["%(path)s/pkill dnsmasq"%{"path":path}], shell=True)
 print("killing maradns")
 call(["%(path)s/pkill maradns"%{"path":path}], shell=True)
 print("Reverting to DHCP Setting")
-call(["ipconfig set en1 DHCP"], shell=True)
+call(["ipconfig set en0 DHCP"], shell=True)
 #Hard kill the apache process to make sure it's really gone
 call(["./pkill httpd"],shell=True)
 #Restart Apache

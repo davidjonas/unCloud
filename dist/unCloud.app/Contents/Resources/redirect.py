@@ -80,7 +80,7 @@ apacheConfig.write(configText)
 apacheConfig.close()
 
 print("Setting up address %s"%ip)
-call(["ipconfig set en1 INFORM %s"%ip], shell=True)
+call(["ipconfig set en0 INFORM %s"%ip], shell=True)
 #Give some time for the ip to settle
 time.sleep(2)
 

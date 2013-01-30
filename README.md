@@ -14,6 +14,13 @@ curl https://raw.github.com/davidjonas/unCloud/unCloudLinux/remote-install | sud
 This configures your machine downloads and installs unCloud at ~/unCloud
 
 
+Adding images to the slideshow
+==============================
+
+To add images to the slideshow, copy them to the folder:
+
+/var/www/images/
+
 Running unCloud
 ===============
 

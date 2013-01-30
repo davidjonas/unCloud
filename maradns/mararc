@@ -2,4 +2,4 @@ hide_disclaimer = "YES"
 csv2 = {}
 csv2["."] = "csv2_default_zonefile"
 ipv4_bind_addresses = "192.168.1.1"
-chroot_dir = "/var/unCloud/maradns"
+chroot_dir = "~/unCloud/maradns"

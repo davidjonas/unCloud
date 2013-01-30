@@ -5,7 +5,7 @@ apt-get install --yes git maradns dnsmasq hostapd apache2 php5 openssh-server op
 sed -i 's/ENABLED=1/ENABLED=0/' /etc/default/dnsmasq
 
 #Checkout from github
-cd /var
+cd ~/
 git clone https://github.com/davidjonas/unCloud/ unCloud
 cd unCloud
 git checkout unCloudLinux
@@ -13,6 +13,6 @@ git checkout unCloudLinux
 #copy the content to apache home
 cp -r content/* /var/www
 
-#add uncloud to run automatically on boot
+#add uncloud to run automatically on boot (For dedicated boxes)
 #ln -s ~/Desktop/unCloud /etc/init.d/unCloud
 #update-rc.d unCloud defaults
